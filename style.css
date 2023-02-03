@@ -72,7 +72,7 @@ h1 {
   stroke: #087f5b;
   width: 32px;
   height: 32px;
-  margin-bottm: 16px;
+  margin-bottom: 16px;
 }
 
 .benefits-title {
@@ -107,9 +107,8 @@ h1 {
 
 /* MACRO CALCULATOR */
 
-.calculator-section {
-  align-items: center;
-  justify-content: center;
+.calculator-box {
+  grid-column: 1/ 2;
 }
 
 .form {
@@ -127,19 +126,33 @@ h1 {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
+  font-weight: bold;
 }
-.form-control input {
+.form-control input,
+.form-control select {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
   width: 100%;
   padding: 10px;
   font-size: 14px;
+  color: #495057;
 }
 
-.form-control input:focus {
+input::placeholder {
+  color: #495057;
+}
+
+.form-control input:focus,
+.form-control select:focus {
   outline: 0;
   border-color: #087f5b;
+  cursor: pointer;
+}
+
+.form-control input:hover,
+.form-control select:hover {
+  cursor: pointer;
 }
 
 .form-control.success input {
@@ -155,7 +168,7 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .form-control.error small {
@@ -182,4 +195,5 @@ h1 {
   color: #fff;
   font-size: 18px;
   padding: 8px 16px;
+  cursor: pointer;
 }
