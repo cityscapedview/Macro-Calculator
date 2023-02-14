@@ -5,11 +5,13 @@ form.addEventListener("submit", (e) => {
 
   const fd = new FormData(form);
   const userWeight = fd.get("weight");
+  const userHeight = fd.get("height");
+  const userAge = fd.get("age");
+  const userActivity = fd.get("activity");
   const userGender = fd.get("gender");
   const userGoal = fd.get("goal");
-  const userHeight = fd.get("height");
 
-  let x = restGoal(userWeight, userHeight, userGender, 33);
+  let x = restGoal(userWeight, userHeight, userGender, userAge);
   console.log(x);
 
   let y = calGoal(x, userGoal);
