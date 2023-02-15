@@ -11,7 +11,10 @@ form.addEventListener("submit", (e) => {
   const userGender = fd.get("gender");
   const userGoal = fd.get("goal");
 
-  let x = restGoal(userWeight, userHeight, userGender, userAge);
+  let a = activityLevel(userActivity);
+  console.log(a);
+
+  let x = restGoal(userWeight, userHeight, userGender, userAge, a);
   console.log(x);
 
   let y = calGoal(x, userGoal);
@@ -28,14 +31,32 @@ form.addEventListener("submit", (e) => {
 // increase weight by 250-500 cals
 // This might be better as a switch statement: case 1 weight gain case 2 weight loss case 3 maintenance
 
-function restGoal(weight, height, gender, age) {
+/// returning early - look up.  create object that has each key: value; looking up activity vs key
+function activityLevel(activity) {
+  switch (activity) {
+    case "sedentary":
+      return 1.2;
+    case "light activity":
+      return 1.375;
+    case "moderate activity":
+      return 1.55;
+    case "very activite":
+      return 1.725;
+  }
+}
+
+// no variable restCalories required.  DRY. make common equation variable, and kg and cm conversions in calculate variable.
+// + (gender === "male" ? 5 : -161)
+function restGoal(weight, height, gender, age, a) {
   weight /= 2.205;
   height *= 2.54;
   let restCalories = 0;
   if (gender == "male") {
-    return (restCalories = 10 * weight + 6.25 * height - 5 * age + 5) * 1.2;
+    let restCalories = 10 * weight + 6.25 * height - 5 * age + 5;
+    return (restCalories *= a);
   } else {
-    return (restCalories = 10 * weight + 6.25 * height - 5 * age - 161) * 1.2;
+    let restCalories = 10 * weight + 6.25 * height - 5 * age - 161;
+    return (restCalories *= a);
   }
 }
 
