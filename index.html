@@ -128,6 +128,31 @@
                   min="0"
                   max="1000"
                   placeholder="Enter Weight (lbs)"
+                  name="weight"
+                />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="height">Height</label>
+                <input
+                  type="number"
+                  id="height"
+                  min="0"
+                  max="108"
+                  placeholder="Enter Height (inches)"
+                  name="height"
+                />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  id="age"
+                  min="0"
+                  max="120"
+                  placeholder="Enter Age (years)"
+                  name="age"
                 />
                 <small>Error message</small>
               </div>
@@ -142,6 +167,17 @@
                 <small>Error message</small>
               </div>
               <div class="form-control">
+                <label for="activity-level">Activity Level</label>
+                <select name="activity" id="activity-level">
+                  <option value="selector">Activity Level</option>
+                  <option value="sedentary">Sedentary</option>
+                  <option value="light activity">Light Activity</option>
+                  <option value="moderate activity">Moderate Activity</option>
+                  <option value="very activite">Very Activite</option>
+                </select>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
                 <label for="goal-selector">Goal</label>
                 <select name="goal" id="goal-selector">
                   <option value="selector">Goal Selection</option>
@@ -151,26 +187,18 @@
                 </select>
                 <small>Error message</small>
               </div>
-              <div class="form-control">
-                <label for="height">Height</label>
-                <input
-                  type="number"
-                  id="height"
-                  min="0"
-                  max="108"
-                  placeholder="Enter Height (inches)"
-                />
-                <small>Error message</small>
-              </div>
               <div class="instructions-prompts">
-                <button class="btn">Calculate</button>
+                <button type="submit" class="btn">Calculate</button>
               </div>
             </form>
           </div>
         </div>
       </section>
 
-      <footer>Copyright &copy; 2023 by David Fagan.</footer>
+      <footer>
+        Copyright &copy; 2023 by David Fagan.
+        <script src="script.js"></script>
+      </footer>
     </div>
   </body>
 </html>
