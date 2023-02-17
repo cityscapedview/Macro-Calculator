@@ -84,7 +84,7 @@ h1 {
 }
 
 .benefits-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* Instructions */
@@ -118,6 +118,19 @@ h1 {
   grid-column: 1/ 2;
 }
 
+.results-box {
+  grid-column: 2/ 3;
+  padding: 3rem 0;
+}
+
+.results-text {
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.invisible {
+  visibility: hidden;
+}
 .form {
   padding: 3rem 0px;
 }

@@ -22,6 +22,10 @@ form.addEventListener("submit", (e) => {
 
   let z = macroCal(userWeight, x);
   console.log(z);
+
+  // toggles results to become visible
+  const visResults = document.querySelector(".invisible");
+  visResults.classList.toggle("invisible");
 });
 
 // Function Calorie Goal
