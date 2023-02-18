@@ -125,7 +125,8 @@ h1 {
 
 .results-text {
   margin-bottom: 2.4rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
 }
 
 .invisible {

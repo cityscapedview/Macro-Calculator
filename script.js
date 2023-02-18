@@ -71,19 +71,19 @@ function restGoal(weight, height, gender, age, a) {
   let restCalories = 0;
   if (gender == "male") {
     let restCalories = 10 * weight + 6.25 * height - 5 * age + 5;
-    return (restCalories *= a);
+    return Math.round((restCalories *= a));
   } else {
     let restCalories = 10 * weight + 6.25 * height - 5 * age - 161;
-    return (restCalories *= a);
+    return Math.round((restCalories *= a));
   }
 }
 
 function calGoal(rCal, goal) {
   let mainCal = rCal;
   if (goal == "gain") {
-    return (mainCal *= 1.15);
+    return Math.round((mainCal *= 1.15));
   } else if (goal == "lose") {
-    return (mainCal *= 0.8);
+    return Math.round((mainCal *= 0.8));
   } else {
     return mainCal;
   }
@@ -100,9 +100,9 @@ function calGoal(rCal, goal) {
 // let carbGoal = (mainCal - macroCal) / 4;
 
 function macroCal(weight, mainCal) {
-  let protGoal = weight;
-  let fatGoal = weight * 0.4;
-  mainCal -= protGoal * 4 + fatGoal * 9;
+  let protGoal = Math.round(weight);
+  let fatGoal = Math.round(weight * 0.4);
+  mainCal -= Math.round(protGoal * 4 + fatGoal * 9);
   let carbGoal = Math.floor(mainCal / 4);
   return {
     protGoal,
