@@ -14,18 +14,32 @@ form.addEventListener("submit", (e) => {
   let a = activityLevel(userActivity);
   console.log(a);
 
-  let x = restGoal(userWeight, userHeight, userGender, userAge, a);
-  console.log(x);
+  let rGoal = restGoal(userWeight, userHeight, userGender, userAge, a);
+  console.log(rGoal);
 
-  let y = calGoal(x, userGoal);
-  console.log(y);
+  let cGoal = calGoal(rGoal, userGoal);
+  console.log(cGoal);
 
-  let z = macroCal(userWeight, x);
-  console.log(z);
+  let mGoal = macroCal(userWeight, rGoal);
+  console.log(mGoal);
 
   // toggles results to become visible
   const visResults = document.querySelector(".invisible");
   visResults.classList.toggle("invisible");
+
+  // adds results to results section
+  // This needs to be replaced with a function that can iterate
+  // through an array of the goal variables
+  // Just wanted to get it running before refactoring
+
+  let addIteminput1 = document.querySelector(".maint-results p");
+  addIteminput1.innerText = rGoal;
+
+  let addIteminput2 = document.querySelector(".goal-results p");
+  addIteminput2.innerText = cGoal;
+
+  let addIteminput3 = document.querySelector(".macro-results p");
+  addIteminput3.innerText = `Protein:${mGoal.protGoal} Carbs:${mGoal.carbGoal} Fat:${mGoal.fatGoal}`;
 });
 
 // Function Calorie Goal
