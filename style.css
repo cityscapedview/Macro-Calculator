@@ -114,12 +114,22 @@ h1 {
 
 /* MACRO CALCULATOR */
 
-.calculator-box {
+.calculator-box-left {
   grid-column: 1/ 2;
 }
 
-.results-box {
+.calculator-box-middle {
+  padding-top: 105px;
   grid-column: 2/ 3;
+}
+
+.calculator-box-right {
+  padding-top: 105px;
+  grid-column: 3/ 4;
+}
+
+.results-box {
+  grid-column: 1/ 3;
   padding: 3rem 0;
 }
 
