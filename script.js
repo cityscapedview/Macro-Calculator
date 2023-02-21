@@ -14,14 +14,32 @@ form.addEventListener("submit", (e) => {
   let a = activityLevel(userActivity);
   console.log(a);
 
-  let x = restGoal(userWeight, userHeight, userGender, userAge, a);
-  console.log(x);
+  let rGoal = restGoal(userWeight, userHeight, userGender, userAge, a);
+  console.log(rGoal);
 
-  let y = calGoal(x, userGoal);
-  console.log(y);
+  let cGoal = calGoal(rGoal, userGoal);
+  console.log(cGoal);
 
-  let z = macroCal(userWeight, x);
-  console.log(z);
+  let mGoal = macroCal(userWeight, rGoal);
+  console.log(mGoal);
+
+  // toggles results to become visible
+  const visResults = document.querySelector(".results-box");
+  visResults.classList.remove("invisible");
+
+  // adds results to results section
+  // This needs to be replaced with a function that can iterate
+  // through an array of the goal variables
+  // Just wanted to get it running before refactoring
+
+  let addIteminput1 = document.querySelector(".maint-results p");
+  addIteminput1.innerText = rGoal;
+
+  let addIteminput2 = document.querySelector(".goal-results p");
+  addIteminput2.innerText = cGoal;
+
+  let addIteminput3 = document.querySelector(".macro-results p");
+  addIteminput3.innerText = `Protein:${mGoal.protGoal} Carbs:${mGoal.carbGoal} Fat:${mGoal.fatGoal}`;
 });
 
 // Function Calorie Goal
@@ -53,19 +71,19 @@ function restGoal(weight, height, gender, age, a) {
   let restCalories = 0;
   if (gender == "male") {
     let restCalories = 10 * weight + 6.25 * height - 5 * age + 5;
-    return (restCalories *= a);
+    return Math.round(restCalories * a);
   } else {
     let restCalories = 10 * weight + 6.25 * height - 5 * age - 161;
-    return (restCalories *= a);
+    return Math.round(restCalories * a);
   }
 }
 
 function calGoal(rCal, goal) {
   let mainCal = rCal;
   if (goal == "gain") {
-    return (mainCal *= 1.15);
+    return Math.round(mainCal * 1.15);
   } else if (goal == "lose") {
-    return (mainCal *= 0.8);
+    return Math.round(mainCal * 0.8);
   } else {
     return mainCal;
   }
@@ -81,10 +99,13 @@ function calGoal(rCal, goal) {
 // Carbs: 1-3g per gram.  Calculate fat and protein and then remainder can be carbs.
 // let carbGoal = (mainCal - macroCal) / 4;
 
+//Update to include logic to determine if macro calories equal calories
+//Potential new features include different macro splits for higher protein
+
 function macroCal(weight, mainCal) {
-  let protGoal = weight;
-  let fatGoal = weight * 0.4;
-  mainCal -= protGoal * 4 + fatGoal * 9;
+  let protGoal = Math.round(weight);
+  let fatGoal = Math.round(weight * 0.4);
+  mainCal -= Math.round(protGoal * 4 + fatGoal * 9);
   let carbGoal = Math.floor(mainCal / 4);
   return {
     protGoal,
