@@ -24,8 +24,8 @@ form.addEventListener("submit", (e) => {
   console.log(mGoal);
 
   // toggles results to become visible
-  const visResults = document.querySelector(".invisible");
-  visResults.classList.toggle("invisible");
+  const visResults = document.querySelector(".results-box");
+  visResults.classList.remove("invisible");
 
   // adds results to results section
   // This needs to be replaced with a function that can iterate
@@ -71,19 +71,19 @@ function restGoal(weight, height, gender, age, a) {
   let restCalories = 0;
   if (gender == "male") {
     let restCalories = 10 * weight + 6.25 * height - 5 * age + 5;
-    return Math.round((restCalories *= a));
+    return Math.round(restCalories * a);
   } else {
     let restCalories = 10 * weight + 6.25 * height - 5 * age - 161;
-    return Math.round((restCalories *= a));
+    return Math.round(restCalories * a);
   }
 }
 
 function calGoal(rCal, goal) {
   let mainCal = rCal;
   if (goal == "gain") {
-    return Math.round((mainCal *= 1.15));
+    return Math.round(mainCal * 1.15);
   } else if (goal == "lose") {
-    return Math.round((mainCal *= 0.8));
+    return Math.round(mainCal * 0.8);
   } else {
     return mainCal;
   }
@@ -98,6 +98,9 @@ function calGoal(rCal, goal) {
 // macroCal += (9 x fatGoal);
 // Carbs: 1-3g per gram.  Calculate fat and protein and then remainder can be carbs.
 // let carbGoal = (mainCal - macroCal) / 4;
+
+//Update to include logic to determine if macro calories equal calories
+//Potential new features include different macro splits for higher protein
 
 function macroCal(weight, mainCal) {
   let protGoal = Math.round(weight);
