@@ -11,10 +11,16 @@ form.addEventListener("submit", (e) => {
   const userGender = fd.get("gender");
   const userGoal = fd.get("goal");
 
-  let a = activityLevel(userActivity);
-  console.log(a);
+  let goalFactor = activityLevel(userActivity);
+  console.log(goalFactor);
 
-  let rGoal = restGoal(userWeight, userHeight, userGender, userAge, a);
+  let rGoal = calculateCalories(
+    userWeight,
+    userHeight,
+    userGender,
+    userAge,
+    goalFactor
+  );
   console.log(rGoal);
 
   let cGoal = calGoal(rGoal, userGoal);
@@ -62,20 +68,33 @@ function activityLevel(activity) {
       return 1.725;
   }
 }
+function lb2kg(lb) {
+  return lb / 2.205;
+}
 
-// no variable restCalories required.  DRY. make common equation variable, and kg and cm conversions in calculate variable.
-// + (gender === "male" ? 5 : -161)
-function restGoal(weight, height, gender, age, a) {
-  weight /= 2.205;
-  height *= 2.54;
-  let restCalories = 0;
-  if (gender == "male") {
-    let restCalories = 10 * weight + 6.25 * height - 5 * age + 5;
-    return Math.round(restCalories * a);
-  } else {
-    let restCalories = 10 * weight + 6.25 * height - 5 * age - 161;
-    return Math.round(restCalories * a);
+function inch2cm(inch) {
+  return inch * 2.54;
+}
+
+function getGenderFactor(gender) {
+  const genderFactor = {
+    male: 5,
+    female: -161,
+  };
+  if (!genderFactor[gender]) {
+    throw new Error("invalid gender");
   }
+  return genderFactor[gender];
+}
+
+function calculateCalories(weight, height, gender, age, goalFactor) {
+  return Math.round(
+    (10 * lb2kg(weight) +
+      6.25 * inch2cm(height) -
+      5 * age +
+      getGenderFactor(gender)) *
+      goalFactor
+  );
 }
 
 function calGoal(rCal, goal) {
