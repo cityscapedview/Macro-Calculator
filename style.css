@@ -21,17 +21,19 @@ html {
 /* -----------------------  */
 /* GENERAL STYLES */
 /* -----------------------  */
+
 body {
+  /* Font-family to-do configure in css.main */
   font-family: "Inter", sans-serif;
-  color: #343a40;
+  /* color: #343a40; */
 }
 
-.container {
+/* .container {
   max-width: 96rem;
   margin: 0 auto;
-}
+} */
 
-header,
+/* header, */
 section {
   margin-bottom: 3.2rem;
 }
@@ -53,22 +55,22 @@ h2 {
 /* ------------------------ */
 
 /* HEADER */
-header {
-  display: grid;
+/* header {
+  display: grid; 
   grid-template-columns: repeat(1fr);
   margin-top: 4.8rem;
-}
-
+} */
+/* 
 .header-text-box {
   align-self: center;
-}
+} */
 
-h1 {
-  margin-bottom: 2.4rem;
+/* h1 {
+  margin-bottom: 2.4rem; 
   font-size: 4.4rem;
   line-height: 1.1;
-  letter-spacing: -1px;
-}
+  letter-spacing: -1px; 
+} */
 
 /* BENEFITS */
 .benefits-icon {
