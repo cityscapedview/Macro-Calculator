@@ -34,15 +34,15 @@ body {
 } */
 
 /* header, */
-section {
+/* section {
   margin-bottom: 3.2rem;
-}
+} */
 
-h2 {
+/* h2 {
   margin-bottom: 3.2rem;
   font-size: 3.6rem;
   letter-spacing: -0.5px;
-}
+} */
 
 .grid-3-cols {
   display: grid;
@@ -58,7 +58,7 @@ h2 {
 /* header {
   display: grid; 
   grid-template-columns: repeat(1fr);
-  margin-top: 4.8rem;
+  margin -top: 4.8rem;
 } */
 /* 
 .header-text-box {
@@ -73,21 +73,21 @@ h2 {
 } */
 
 /* BENEFITS */
-.benefits-icon {
+/* .benefits-icon {
   stroke: #087f5b;
   width: 3.2rem;
   height: 3.2rem;
   margin-bottom: 1.6rem;
-}
-
+} */
+/* 
 .benefits-title {
   font-size: 1.8rem;
   line-height: 1.7;
-}
+} */
 
-.benefits-text {
+/* .benefits-text {
   font-size: 1.6rem;
-}
+} */
 
 /* Instructions */
 
