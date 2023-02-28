@@ -122,7 +122,7 @@
       </section>
 
       <!-- Instruction Section -->
-      <section class="bg-[#087f5b] text-white p-[2.4rem] border rounded-3xl">
+      <section class="bg-[#087f5b] text-white p-[2.4rem] border rounded-3xl mb-8">
         <!-- Instructions Grid Container -->
         <div class="grid grid-cols-3">
 
@@ -143,68 +143,91 @@
         </div>
       </section>
 
+      <!-- Calculator Section -->
       <section class="calculator-section">
-        <div class="grid-3-cols">
-          <div class="calculator-box-left">
-            <form id="form" class="form">
-              <h2>Calculator</h2>
-              <div class="form-control">
-                <label for="weight">Weight</label>
-                <input
-                  type="number"
-                  id="weight"
-                  min="0"
-                  max="1000"
-                  placeholder="Enter Weight (lbs)"
-                  name="weight"
-                />
-                <small>Error message</small>
-              </div>
-              <div class="form-control">
-                <label for="height">Height</label>
-                <input
-                  type="number"
-                  id="height"
-                  min="0"
-                  max="108"
-                  placeholder="Enter Height (inches)"
-                  name="height"
-                />
-                <small>Error message</small>
-              </div>
-            </div>
-            <div class="calculator-box-middle">
-              <div class="form-control">
-                <label for="age">Age</label>
-                <input
-                  type="number"
-                  id="age"
-                  min="0"
-                  max="120"
-                  placeholder="Enter Age (years)"
-                  name="age"
-                />
-                <small>Error message</small>
-              </div>
-            
+
+        <!-- Calculator Grid Container -->
+        <div class="grid grid-cols-3 gap-x-32">
+
+          <!-- Calculator Form Header  -->
+          <div class="col-start-1 col-span-1">
+            <form id="form" class="form py-[3rem] px-0">
+              <h2 class="mb-8 text-4xl tracking-tight font-semibold">Calculator</h2>
+          </div>
+          
+            <!-- Calculator Box Left -->
+            <div class="col-start-1 col-span-1">
               
-                <div class="form-control">
-                  <label for="gender-select">Gender</label>
-                  <select name="gender" id="gender-select">
+                <!-- Weight Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="weight">Weight</label>
+                  <input
+                    type="number"
+                    id="weight"
+                    min="0"
+                    max="1000"
+                    placeholder="Enter Weight (lbs)"
+                    name="weight"
+                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0"
+                  />
+                  <small>Error message</small>
+                </div>
+
+                <!-- Height Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="height">Height</label>
+                  <input
+                    type="number"
+                    id="height"
+                    min="0"
+                    max="108"
+                    placeholder="Enter Height (inches)"
+                    name="height"
+                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0"
+                  />
+                  <small>Error message</small>
+                </div>
+              </div>
+
+              <!-- Calculator Box Middle -->
+              <div class="col-start-2 col-span-1">
+
+                <!-- Age Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="age">Age</label>
+                  <input
+                    type="number"
+                    id="age"
+                    min="0"
+                    max="120"
+                    placeholder="Enter Age (years)"
+                    name="age"
+                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0"
+                  />
+                  <small>Error message</small>
+                </div>
+              
+                <!-- Gender Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="gender-select">Gender</label>
+                  <select name="gender" id="gender-select" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0">
                     <option value="selector">
-                      Gender Selection (optional)
+                      Gender Selection
                     </option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                    <option value="non-binary">Non-Binary</option>
                   </select>
                   <small>Error message</small>
                 </div>
               </div>
-              <div class="calculator-box-right">
-                <div class="form-control">
-                  <label for="activity-level">Activity Level</label>
-                  <select name="activity" id="activity-level">
+
+              <!-- Calculator Box Right -->
+              <div class="col-start-3 col-span-1">
+
+                <!-- Activity Level Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="activity-level">Activity Level</label>
+                  <select name="activity" id="activity-level" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 ">
                     <option value="selector">Activity Level</option>
                     <option value="sedentary">Sedentary</option>
                     <option value="light activity">Light Activity</option>
@@ -213,9 +236,11 @@
                   </select>
                   <small>Error message</small>
                 </div>
-                <div class="form-control">
-                  <label for="goal-selector">Goal</label>
-                  <select name="goal" id="goal-selector">
+
+                <!-- Goal Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="goal-selector">Goal</label>
+                  <select name="goal" id="goal-selector" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0">
                     <option value="selector">Goal Selection</option>
                     <option value="gain">Gain Weight</option>
                     <option value="lose">Lose Weight</option>
@@ -227,7 +252,7 @@
               <div class="instructions-prompts">
                 <button type="submit" class="btn">Calculate</button>
               </div>
-            </form>
+          </form>
           </div>
           </div>
           <div class="results-box invisible">
