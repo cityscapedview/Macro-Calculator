@@ -98,21 +98,21 @@ body {
   border-radius: 1.6rem;
 } */
 
-.instructions-box {
+/* .instructions-box {
   grid-column: 1 / -1;
   align-self: center;
-}
-
+} */
+/* 
 .instructions-box h2 {
   margin-bottom: 2.4rem;
   font-size: 2.4rem;
-}
+} */
 
-.instructions-instructions {
+/* .instructions-instructions {
   margin-bottom: 2.4rem;
   font-size: 1.8rem;
   line-height: 1.7;
-}
+} */
 
 /* MACRO CALCULATOR */
 
