@@ -91,12 +91,12 @@ body {
 
 /* Instructions */
 
-.instructions-section {
+/* .instructions-section {
   background-color: #087f5b;
   color: #fff;
   padding: 2.4rem;
   border-radius: 1.6rem;
-}
+} */
 
 .instructions-box {
   grid-column: 1 / -1;
