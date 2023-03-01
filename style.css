@@ -207,7 +207,7 @@ body {
   visibility: visible;
 }
 
-.btn,
+/* .btn,
 .btn:visited {
   background-color: #fff;
   color: #087f5b;
@@ -220,13 +220,13 @@ body {
   font-size: 1.8rem;
   padding: 0.8rem 1.6rem;
   transition: all 0.3s;
-}
+} */
 
-.btn:hover,
+/* .btn:hover,
 .btn:active {
   background-color: #099268;
   color: #fff;
   font-size: 1.8rem;
   padding: 0.8rem 1.6rem;
   cursor: pointer;
-}
+} */
