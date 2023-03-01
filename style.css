@@ -140,7 +140,7 @@ h1 {
 }
 
 .invisible {
-  visibility: hidden;
+  display: none;
 }
 
 .form {
