@@ -130,10 +130,10 @@ body {
   grid-column: 3/ 4;
 } */
 
-.results-box {
+/* .results-box {
   grid-column: 1/ 3;
   padding: 3rem 0;
-}
+} */
 
 .results-text {
   margin-bottom: 2.4rem;
@@ -141,9 +141,9 @@ body {
   line-height: 1.7;
 }
 
-.invisible {
+/* .invisible {
   visibility: hidden;
-}
+} */
 
 /* .form {
   padding: 3rem 0px;

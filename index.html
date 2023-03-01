@@ -144,7 +144,7 @@
       </section>
 
       <!-- Calculator Section -->
-      <section class="calculator-section">
+      <section class="mb-24">
 
         <!-- Calculator Grid Container -->
         <div class="grid grid-cols-3 gap-x-32">
@@ -253,29 +253,44 @@
                 <button type="submit" class="btn bg-color-white text-[#087f5b] border-solid border-2 border-[#343a40] rounded uppercase font-[500] inline-block text-[1.8rem] py-[.8rem] px-[1.6rem] duration-300 hover:bg-[#099268] active:bg-[#099268] hover:text-white active:text-white 
                 hover:cursor-pointer active:cursor-pointer">Calculate</button>
               </div>
-          </form>
+           </form>
           </div>
-          </div>
-          <div class="results-box invisible">
-            <h2>Results</h2>
-            <div class="results-text">
-              <h3>Maintenance Calories</h3>
+        </div>
+      </section>
+
+      <!-- Results Section -->
+      <section id="results-section" class="py-[3rem] px-[0] invisible">
+
+        <!-- Results Header  -->
+        <h2 class="mb-8 text-4xl tracking-tight font-semibold">Results</h2>
+
+          <!-- Results Box -->
+          <div class="grid grid-cols-3 gap-x-32">
+
+            <!-- Maintenance Calories Display -->
+            <div class="col-start-1 col-span-1 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
+              <h3 class="text-3xl leading-7 font-bold py-5">Maintenance Calories</h3>
               <div class="maint-results">
                 <p>Sample Results</p>
               </div>
             </div>
-            <div class="results-text">
-              <h3>Goal Oriented Calories</h3>
+
+            <!-- Goal Oriented Calories Display -->
+            <div class="col-start-2 col-span-1 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
+              <h3 class="text-3xl leading-7 font-bold py-5">Goal Oriented Calories</h3>
               <div class="goal-results">
                 <p>Sample Results</p>
               </div>
             </div>
-            <div class="results-text">
-              <h3>Macros</h3>
+
+            <!-- Macros Display -->
+            <div class="col-start-3 col-span-1 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
+              <h3 class="text-3xl leading-7 font-bold py-5">Macros</h3>
               <div class="macro-results">
                 <p>Sample Results</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>

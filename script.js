@@ -24,7 +24,7 @@ form.addEventListener("submit", (e) => {
   console.log(mGoal);
 
   // toggles results to become visible
-  const visResults = document.querySelector(".results-box");
+  const visResults = document.querySelector("#results-section");
   visResults.classList.remove("invisible");
 
   // adds results to results section
@@ -39,7 +39,7 @@ form.addEventListener("submit", (e) => {
   addIteminput2.innerText = cGoal;
 
   let addIteminput3 = document.querySelector(".macro-results p");
-  addIteminput3.innerText = `Protein:${mGoal.protGoal} Carbs:${mGoal.carbGoal} Fat:${mGoal.fatGoal}`;
+  addIteminput3.innerText = `Protein:${mGoal.protGoal}\n Carbs:${mGoal.carbGoal}\n Fat:${mGoal.fatGoal}`;
 });
 
 // Function Calorie Goal
