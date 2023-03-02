@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
 
   // toggles results to become visible
   const visResults = document.querySelector("#results-section");
-  visResults.classList.remove("invisible");
+  visResults.classList.remove("hidden");
 
   // adds results to results section
   // This needs to be replaced with a function that can iterate
