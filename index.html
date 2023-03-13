@@ -24,14 +24,22 @@
         <!-- Header Text Box -->
         <div class="self-center">
           <!-- Header Title -->
-          <h1 class="mb-10 text-5xl leading-relaxed tracking-tight font-semibold dark:text-slate-200">Macro Calculator</h1>
+          <h1
+            class="mb-10 text-5xl leading-relaxed tracking-tight font-semibold dark:text-slate-200"
+          >
+            Macro Calculator
+          </h1>
         </div>
       </header>
 
       <!-- Section -->
       <section class="mb-0">
         <!-- Section Title -->
-        <h2 class="mb-12 text-4xl tracking-tight font-semibold dark:text-slate-300">Benefits</h2>
+        <h2
+          class="mb-12 text-4xl tracking-tight font-semibold dark:text-slate-300"
+        >
+          Benefits
+        </h2>
         <!-- Column Grid Container -->
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-16">
           <!-- Healthy Living Card -->
@@ -53,7 +61,9 @@
             </svg>
 
             <!-- Healthy Living Title -->
-            <p class="text-3xl leading-7 font-bold py-4 dark:text-slate-300">Healthy Living</p>
+            <p class="text-3xl leading-7 font-bold py-4 dark:text-slate-300">
+              Healthy Living
+            </p>
 
             <!-- Healthy Living Text -->
             <p class="text-[1.6rem] dark:text-slate-400">
@@ -81,10 +91,12 @@
               />
             </svg>
 
-             <!-- Habit Forming Title -->
-            <p class="text-3xl leading-7 font-bold py-4 dark:text-slate-300">Habit Forming</p>
+            <!-- Habit Forming Title -->
+            <p class="text-3xl leading-7 font-bold py-4 dark:text-slate-300">
+              Habit Forming
+            </p>
 
-             <!-- Habit Forming Text -->
+            <!-- Habit Forming Text -->
             <p class="text-[1.6rem] dark:text-slate-400">
               Maecenas porttitor molestie ante, in accumsan ipsum ultricies nec.
               Etiam ullamcorper, arcu eu rutrum egestas, ipsum dui auctor ex, ac
@@ -95,7 +107,7 @@
           </div>
 
           <!-- Science Based Card -->
-          <div  class="shadow-md p-8 rounded-3xl mb-16 dark:bg-slate-800">
+          <div class="shadow-md p-8 rounded-3xl mb-16 dark:bg-slate-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -112,32 +124,41 @@
             </svg>
 
             <!-- Science Based Title -->
-            <p class="text-3xl leading-7 font-bold py-4 dark:text-slate-300">Science Based</p>
+            <p class="text-3xl leading-7 font-bold py-4 dark:text-slate-300">
+              Science Based
+            </p>
 
             <!-- Science Based Text -->
             <p class="text-[1.6rem] dark:text-slate-400">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
               autem impedit totam eligendi beatae ab optio ut officia numquam,
               eum molestias magnam aliquid exercitationem quaerat inventore
-              blanditiis sed! Eum, pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              blanditiis sed! Eum, pariatur! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit.
             </p>
           </div>
         </div>
       </section>
 
       <!-- Instruction Section -->
-      <section class="bg-[#087f5b] text-white p-[2.4rem] border rounded-3xl mb-8 dark:bg-slate-800  dark:border-[#087f5b]">
+      <section
+        class="bg-[#087f5b] text-white p-[2.4rem] border rounded-3xl mb-8 dark:bg-slate-800 dark:border-[#087f5b]"
+      >
         <!-- Instructions Grid Container -->
         <div class="grid grid-cols-3">
-
           <!-- Instructions Box -->
           <div class="self-center col-span-3">
-
             <!-- Instructions Title -->
-            <h2 class="mb-[2.4rem] text-[2.4rem] font-semibold dark:text-slate-300">Instructions</h2>
+            <h2
+              class="mb-[2.4rem] text-[2.4rem] font-semibold dark:text-slate-300"
+            >
+              Instructions
+            </h2>
 
             <!-- Instructions Text -->
-            <p class="mb-[2.4rem] text-[1.8rem] leading-[1.7] dark:text-slate-400">
+            <p
+              class="mb-[2.4rem] text-[1.8rem] leading-[1.7] dark:text-slate-400"
+            >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Praesentium dicta sed facere id debitis! Autem ratione reiciendis
               ea cumque placeat. Illo aperiam aliquid eum cumque! Nam modi
@@ -149,152 +170,195 @@
 
       <!-- Calculator Section -->
       <section class="mb-24">
+        <form id="form" class="form py-[3rem] px-0">
+          <!-- Calculator Grid Container -->
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
+            <!-- Calculator Form Header  -->
+            <div class="col-start-1 col-span-1">
+              <h2
+                class="mb-8 text-4xl tracking-tight font-semibold dark:text-slate-300"
+              >
+                Calculator
+              </h2>
+            </div>
 
-        <!-- Calculator Grid Container -->
-        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
-
-          <!-- Calculator Form Header  -->
-          <div class="col-start-1 col-span-1">
-            <form id="form" class="form py-[3rem] px-0">
-              <h2 class="mb-8 text-4xl tracking-tight font-semibold dark:text-slate-300">Calculator</h2>
-          </div>
-          
             <!-- Calculator Box Left -->
             <div class="col-start-1 col-span-1">
-              
-                <!-- Weight Form Control -->
-                <div class="form-control mb-[1rem] pb-[2rem]">
-                  <label class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400" for="weight">Weight</label>
-                  <input
-                    type="number"
-                    id="weight"
-                    min="0"
-                    max="1000"
-                    placeholder="Enter Weight (lbs)"
-                    name="weight"
-                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 dark:placeholder:text-slate-300"
-                  />
-                  <small>Error message</small>
-                </div>
-
-                <!-- Height Form Control -->
-                <div class="form-control mb-[1rem] pb-[2rem]">
-                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400" for="height">Height</label>
-                  <input
-                    type="number"
-                    id="height"
-                    min="0"
-                    max="108"
-                    placeholder="Enter Height (inches)"
-                    name="height"
-                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 dark:placeholder:text-slate-300"
-                  />
-                  <small>Error message</small>
-                </div>
+              <!-- Weight Form Control -->
+              <div class="form-control mb-[1rem] pb-[2rem]">
+                <label
+                  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400"
+                  for="weight"
+                  >Weight</label
+                >
+                <input
+                  type="number"
+                  id="weight"
+                  min="0"
+                  max="1000"
+                  placeholder="Enter Weight (lbs)"
+                  name="weight"
+                  class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 dark:placeholder:text-slate-300"
+                />
+                <small>Error message</small>
               </div>
 
-              <!-- Calculator Box Middle -->
-              <div class="md:col-start-2 col-span-1">
+              <!-- Height Form Control -->
+              <div class="form-control mb-[1rem] pb-[2rem]">
+                <label
+                  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400"
+                  for="height"
+                  >Height</label
+                >
+                <input
+                  type="number"
+                  id="height"
+                  min="0"
+                  max="108"
+                  placeholder="Enter Height (inches)"
+                  name="height"
+                  class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 dark:placeholder:text-slate-300"
+                />
+                <small>Error message</small>
+              </div>
+            </div>
 
-                <!-- Age Form Control -->
-                <div class="form-control mb-[1rem] pb-[2rem]">
-                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400" for="age">Age</label>
-                  <input
-                    type="number"
-                    id="age"
-                    min="0"
-                    max="120"
-                    placeholder="Enter Age (years)"
-                    name="age"
-                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 dark:placeholder:text-slate-300"
-                  />
-                  <small>Error message</small>
-                </div>
-              
-                <!-- Gender Form Control -->
-                <div class="form-control mb-[1rem] pb-[2rem]">
-                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400" for="gender-select">Gender</label>
-                  <select name="gender" id="gender-select" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300">
-                    <option value="selector">
-                      Gender Selection
-                    </option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                  <small>Error message</small>
-                </div>
+            <!-- Calculator Box Middle -->
+            <div class="md:col-start-2 col-span-1">
+              <!-- Age Form Control -->
+              <div class="form-control mb-[1rem] pb-[2rem]">
+                <label
+                  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400"
+                  for="age"
+                  >Age</label
+                >
+                <input
+                  type="number"
+                  id="age"
+                  min="0"
+                  max="120"
+                  placeholder="Enter Age (years)"
+                  name="age"
+                  class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 dark:placeholder:text-slate-300"
+                />
+                <small>Error message</small>
               </div>
 
-              <!-- Calculator Box Right -->
-              <div class="md:col-start-3 col-span-1">
+              <!-- Gender Form Control -->
+              <div class="form-control mb-[1rem] pb-[2rem]">
+                <label
+                  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400"
+                  for="gender-select"
+                  >Gender</label
+                >
+                <select
+                  name="gender"
+                  id="gender-select"
+                  class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300"
+                >
+                  <option value="selector">Gender Selection</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <small>Error message</small>
+              </div>
+            </div>
 
-                <!-- Activity Level Form Control -->
-                <div class="form-control mb-[1rem] pb-[2rem]">
-                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400" for="activity-level">Activity Level</label>
-                  <select name="activity" id="activity-level" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300 ">
-                    <option value="selector">Activity Level</option>
-                    <option value="sedentary">Sedentary</option>
-                    <option value="light activity">Light Activity</option>
-                    <option value="moderate activity">Moderate Activity</option>
-                    <option value="very activite">Very Activite</option>
-                  </select>
-                  <small>Error message</small>
-                </div>
+            <!-- Calculator Box Right -->
+            <div class="md:col-start-3 col-span-1">
+              <!-- Activity Level Form Control -->
+              <div class="form-control mb-[1rem] pb-[2rem]">
+                <label
+                  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400"
+                  for="activity-level"
+                  >Activity Level</label
+                >
+                <select
+                  name="activity"
+                  id="activity-level"
+                  class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300"
+                >
+                  <option value="selector">Activity Level</option>
+                  <option value="sedentary">Sedentary</option>
+                  <option value="light activity">Light Activity</option>
+                  <option value="moderate activity">Moderate Activity</option>
+                  <option value="very activite">Very Activite</option>
+                </select>
+                <small>Error message</small>
+              </div>
 
-                <!-- Goal Form Control -->
-                <div class="form-control mb-[1rem] pb-[2rem]">
-                  <label class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400" for="goal-selector">Goal</label>
-                  <select name="goal" id="goal-selector" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300">
-                    <option value="selector">Goal Selection</option>
-                    <option value="gain">Gain Weight</option>
-                    <option value="lose">Lose Weight</option>
-                    <option value="maintain">Maintain Weight</option>
-                  </select>
-                  <small>Error message</small>
-                </div>
-              
+              <!-- Goal Form Control -->
+              <div class="form-control mb-[1rem] pb-[2rem]">
+                <label
+                  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold dark:text-slate-400"
+                  for="goal-selector"
+                  >Goal</label
+                >
+                <select
+                  name="goal"
+                  id="goal-selector"
+                  class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 dark:bg-slate-600 dark:border-slate-400 dark:text-slate-300"
+                >
+                  <option value="selector">Goal Selection</option>
+                  <option value="gain">Gain Weight</option>
+                  <option value="lose">Lose Weight</option>
+                  <option value="maintain">Maintain Weight</option>
+                </select>
+                <small>Error message</small>
+              </div>
+
               <div class="instructions-prompts">
-                <button type="submit" class="btn bg-color-white text-[#087f5b] border-solid border-2 border-[#343a40] rounded uppercase font-[500] inline-block text-[1.8rem] py-[.8rem] px-[1.6rem] duration-300 hover:bg-[#099268] active:bg-[#099268] hover:text-white active:text-white 
-                hover:cursor-pointer active:cursor-pointer">Calculate</button>
+                <button
+                  type="submit"
+                  class="btn bg-color-white text-[#087f5b] border-solid border-2 border-[#343a40] rounded uppercase font-[500] inline-block text-[1.8rem] py-[.8rem] px-[1.6rem] duration-300 hover:bg-[#099268] active:bg-[#099268] hover:text-white active:text-white hover:cursor-pointer active:cursor-pointer"
+                >
+                  Calculate
+                </button>
               </div>
-           </form>
+            </div>
           </div>
-        </div>
+        </form>
       </section>
 
       <!-- Results Section -->
       <section id="results-section" class="py-[3rem] px-[0] hidden">
-
         <!-- Results Header  -->
         <h2 class="mb-8 text-4xl tracking-tight font-semibold">Results</h2>
 
-          <!-- Results Box -->
-          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
-
-            <!-- Maintenance Calories Display -->
-            <div class="col-start-1 col-span-1 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
-              <h3 class="text-3xl leading-7 font-bold py-5">Maintenance Calories</h3>
-              <div class="maint-results">
-                <p>Sample Results</p>
-              </div>
+        <!-- Results Box -->
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
+          <!-- Maintenance Calories Display -->
+          <div
+            class="col-start-1 col-span-1 mb-[1.8rem] text-[1.8rem] leading-[1.7]"
+          >
+            <h3 class="text-3xl leading-7 font-bold py-5">
+              Maintenance Calories
+            </h3>
+            <div class="maint-results">
+              <p>Sample Results</p>
             </div>
+          </div>
 
-            <!-- Goal Oriented Calories Display -->
-            <div class="col-span-1 md:col-start-2 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
-              <h3 class="text-3xl leading-7 font-bold py-5">Goal Oriented Calories</h3>
-              <div class="goal-results">
-                <p>Sample Results</p>
-              </div>
+          <!-- Goal Oriented Calories Display -->
+          <div
+            class="col-span-1 md:col-start-2 mb-[1.8rem] text-[1.8rem] leading-[1.7]"
+          >
+            <h3 class="text-3xl leading-7 font-bold py-5">
+              Goal Oriented Calories
+            </h3>
+            <div class="goal-results">
+              <p>Sample Results</p>
             </div>
+          </div>
 
-            <!-- Macros Display -->
-            <div class="col-span-1 md:col-start-3 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
-              <h3 class="text-3xl leading-7 font-bold py-5">Macros</h3>
-              <div class="macro-results">
-                <p>Sample Results</p>
-              </div>
+          <!-- Macros Display -->
+          <div
+            class="col-span-1 md:col-start-3 mb-[1.8rem] text-[1.8rem] leading-[1.7]"
+          >
+            <h3 class="text-3xl leading-7 font-bold py-5">Macros</h3>
+            <div class="macro-results">
+              <p>Sample Results</p>
             </div>
-
           </div>
         </div>
       </section>
