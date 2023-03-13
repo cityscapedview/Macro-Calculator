@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,25 +15,35 @@
     <link rel="stylesheet" href="style.css" />
     <title>Macro Calculator</title>
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="header-text-box">
-          <h1>Macro Calculator</h1>
+  <!-- Body -->
+  <body class="text-[#343a40]">
+    <!-- Global Container -->
+    <div class="max-w-7xl my-0 mx-auto px-20">
+      <!-- Header -->
+      <header class="mb-8 grid grid-cols-1 mt-20">
+        <!-- Header Text Box -->
+        <div class="self-center">
+          <!-- Header Title -->
+          <h1 class="mb-10 text-5xl leading-relaxed tracking-tight font-semibold">Macro Calculator</h1>
         </div>
       </header>
 
-      <section>
-        <h2>Benefits</h2>
-        <div class="grid-3-cols">
-          <div>
+      <!-- Section -->
+      <section class="mb-0">
+        <!-- Section Title -->
+        <h2 class="mb-12 text-4xl tracking-tight font-semibold">Benefits</h2>
+        <!-- Column Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-16">
+          <!-- Healthy Living Card -->
+          <div class="shadow-md p-8 rounded-3xl mb-16">
+            <!-- Heart svg -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="benefits-icon"
+              class="stroke-[#087f5b] w-12 h-12 mb-6"
             >
               <path
                 stroke-linecap="round"
@@ -41,22 +52,27 @@
               />
             </svg>
 
-            <p class="benefits-title"><strong>Healthy Living</strong></p>
-            <p class="benefits-text">
+            <!-- Healthy Living Title -->
+            <p class="text-3xl leading-7 font-bold py-4">Healthy Living</p>
+
+            <!-- Healthy Living Text -->
+            <p class="text-[1.6rem]">
               Interdum et malesuada fames ac ante ipsum primis in faucibus.
               Proin sollicitudin tortor id orci elementum vehicula. Donec
               aliquam eros ac neque cursus feugiat. Nam mattis finibus mi quis
               tempus. Praesent euismod pulvinar purus, sagittis porttitor purus.
             </p>
           </div>
-          <div>
+
+          <!-- Habit Forming Card -->
+          <div class="shadow-md p-8 rounded-3xl mb-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="benefits-icon"
+              class="stroke-[#087f5b] w-12 h-12 mb-6"
             >
               <path
                 stroke-linecap="round"
@@ -65,8 +81,11 @@
               />
             </svg>
 
-            <p class="benefits-title"><strong>Habit Forming</strong></p>
-            <p class="benefits-text">
+             <!-- Habit Forming Title -->
+            <p class="text-3xl leading-7 font-bold py-4">Habit Forming</p>
+
+             <!-- Habit Forming Text -->
+            <p class="text-[1.6rem]">
               Maecenas porttitor molestie ante, in accumsan ipsum ultricies nec.
               Etiam ullamcorper, arcu eu rutrum egestas, ipsum dui auctor ex, ac
               posuere urna lacus ac augue. Nulla facilisi. Proin efficitur
@@ -74,14 +93,16 @@
               sed quam vitae hendrerit.
             </p>
           </div>
-          <div>
+
+          <!-- Science Based Card -->
+          <div  class="shadow-md p-8 rounded-3xl mb-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="benefits-icon"
+              class="stroke-[#087f5b] w-12 h-12 mb-6"
             >
               <path
                 stroke-linecap="round"
@@ -90,22 +111,33 @@
               />
             </svg>
 
-            <p class="benefits-title"><strong>Science Based</strong></p>
-            <p class="benefits-text">
+            <!-- Science Based Title -->
+            <p class="text-3xl leading-7 font-bold py-4">Science Based</p>
+
+            <!-- Science Based Text -->
+            <p class="text-[1.6rem]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
               autem impedit totam eligendi beatae ab optio ut officia numquam,
               eum molestias magnam aliquid exercitationem quaerat inventore
-              blanditiis sed! Eum, pariatur!
+              blanditiis sed! Eum, pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="instructions-section">
-        <div class="grid-3-cols">
-          <div class="instructions-box">
-            <h2>Instructions</h2>
-            <p class="instructions-instructions">
+      <!-- Instruction Section -->
+      <section class="bg-[#087f5b] text-white p-[2.4rem] border rounded-3xl mb-8">
+        <!-- Instructions Grid Container -->
+        <div class="grid grid-cols-3">
+
+          <!-- Instructions Box -->
+          <div class="self-center col-span-3">
+
+            <!-- Instructions Title -->
+            <h2 class="mb-[2.4rem] text-[2.4rem] font-semibold">Instructions</h2>
+
+            <!-- Instructions Text -->
+            <p class="mb-[2.4rem] text-[1.8rem] leading-[1.7]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Praesentium dicta sed facere id debitis! Autem ratione reiciendis
               ea cumque placeat. Illo aperiam aliquid eum cumque! Nam modi
@@ -115,68 +147,91 @@
         </div>
       </section>
 
-      <section class="calculator-section">
-        <div class="grid-3-cols">
-          <div class="calculator-box-left">
-            <form id="form" class="form">
-              <h2>Calculator</h2>
-              <div class="form-control">
-                <label for="weight">Weight</label>
-                <input
-                  type="number"
-                  id="weight"
-                  min="0"
-                  max="1000"
-                  placeholder="Enter Weight (lbs)"
-                  name="weight"
-                />
-                <small>Error message</small>
-              </div>
-              <div class="form-control">
-                <label for="height">Height</label>
-                <input
-                  type="number"
-                  id="height"
-                  min="0"
-                  max="108"
-                  placeholder="Enter Height (inches)"
-                  name="height"
-                />
-                <small>Error message</small>
-              </div>
-            </div>
-            <div class="calculator-box-middle">
-              <div class="form-control">
-                <label for="age">Age</label>
-                <input
-                  type="number"
-                  id="age"
-                  min="0"
-                  max="120"
-                  placeholder="Enter Age (years)"
-                  name="age"
-                />
-                <small>Error message</small>
-              </div>
-            
+      <!-- Calculator Section -->
+      <section class="mb-24">
+
+        <!-- Calculator Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
+
+          <!-- Calculator Form Header  -->
+          <div class="col-start-1 col-span-1">
+            <form id="form" class="form py-[3rem] px-0">
+              <h2 class="mb-8 text-4xl tracking-tight font-semibold">Calculator</h2>
+          </div>
+          
+            <!-- Calculator Box Left -->
+            <div class="col-start-1 col-span-1">
               
-                <div class="form-control">
-                  <label for="gender-select">Gender</label>
-                  <select name="gender" id="gender-select">
+                <!-- Weight Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="weight">Weight</label>
+                  <input
+                    type="number"
+                    id="weight"
+                    min="0"
+                    max="1000"
+                    placeholder="Enter Weight (lbs)"
+                    name="weight"
+                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0"
+                  />
+                  <small>Error message</small>
+                </div>
+
+                <!-- Height Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="height">Height</label>
+                  <input
+                    type="number"
+                    id="height"
+                    min="0"
+                    max="108"
+                    placeholder="Enter Height (inches)"
+                    name="height"
+                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0"
+                  />
+                  <small>Error message</small>
+                </div>
+              </div>
+
+              <!-- Calculator Box Middle -->
+              <div class="md:col-start-2 col-span-1">
+
+                <!-- Age Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="age">Age</label>
+                  <input
+                    type="number"
+                    id="age"
+                    min="0"
+                    max="120"
+                    placeholder="Enter Age (years)"
+                    name="age"
+                    class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] placeholder:text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0"
+                  />
+                  <small>Error message</small>
+                </div>
+              
+                <!-- Gender Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="gender-select">Gender</label>
+                  <select name="gender" id="gender-select" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0">
                     <option value="selector">
-                      Gender Selection (optional)
+                      Gender Selection
                     </option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                    <option value="non-binary">Non-Binary</option>
                   </select>
                   <small>Error message</small>
                 </div>
               </div>
-              <div class="calculator-box-right">
-                <div class="form-control">
-                  <label for="activity-level">Activity Level</label>
-                  <select name="activity" id="activity-level">
+
+              <!-- Calculator Box Right -->
+              <div class="md:col-start-3 col-span-1">
+
+                <!-- Activity Level Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label  class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="activity-level">Activity Level</label>
+                  <select name="activity" id="activity-level" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0 ">
                     <option value="selector">Activity Level</option>
                     <option value="sedentary">Sedentary</option>
                     <option value="light activity">Light Activity</option>
@@ -185,9 +240,11 @@
                   </select>
                   <small>Error message</small>
                 </div>
-                <div class="form-control">
-                  <label for="goal-selector">Goal</label>
-                  <select name="goal" id="goal-selector">
+
+                <!-- Goal Form Control -->
+                <div class="form-control mb-[1rem] pb-[2rem]">
+                  <label class="text-[#343a40] block mb-[.5rem] text-[1.6rem] font-bold" for="goal-selector">Goal</label>
+                  <select name="goal" id="goal-selector" class="border-solid border-2 border-[#f0f0f0] rounded-r block w-full p-[1rem] text-[1.4rem] text-[#495057] focus:border-[#087f5b] focus:cursor-pointer focus:outline-0">
                     <option value="selector">Goal Selection</option>
                     <option value="gain">Gain Weight</option>
                     <option value="lose">Lose Weight</option>
@@ -197,31 +254,47 @@
                 </div>
               
               <div class="instructions-prompts">
-                <button type="submit" class="btn">Calculate</button>
+                <button type="submit" class="btn bg-color-white text-[#087f5b] border-solid border-2 border-[#343a40] rounded uppercase font-[500] inline-block text-[1.8rem] py-[.8rem] px-[1.6rem] duration-300 hover:bg-[#099268] active:bg-[#099268] hover:text-white active:text-white 
+                hover:cursor-pointer active:cursor-pointer">Calculate</button>
               </div>
-            </form>
+           </form>
           </div>
-          </div>
-          <div class="results-box invisible">
-            <h2>Results</h2>
-            <div class="results-text">
-              <h3>Maintenance Calories</h3>
+        </div>
+      </section>
+
+      <!-- Results Section -->
+      <section id="results-section" class="py-[3rem] px-[0] hidden">
+
+        <!-- Results Header  -->
+        <h2 class="mb-8 text-4xl tracking-tight font-semibold">Results</h2>
+
+          <!-- Results Box -->
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
+
+            <!-- Maintenance Calories Display -->
+            <div class="col-start-1 col-span-1 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
+              <h3 class="text-3xl leading-7 font-bold py-5">Maintenance Calories</h3>
               <div class="maint-results">
                 <p>Sample Results</p>
               </div>
             </div>
-            <div class="results-text">
-              <h3>Goal Oriented Calories</h3>
+
+            <!-- Goal Oriented Calories Display -->
+            <div class="col-span-1 md:col-start-2 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
+              <h3 class="text-3xl leading-7 font-bold py-5">Goal Oriented Calories</h3>
               <div class="goal-results">
                 <p>Sample Results</p>
               </div>
             </div>
-            <div class="results-text">
-              <h3>Macros</h3>
+
+            <!-- Macros Display -->
+            <div class="col-span-1 md:col-start-3 mb-[1.8rem] text-[1.8rem] leading-[1.7]">
+              <h3 class="text-3xl leading-7 font-bold py-5">Macros</h3>
               <div class="macro-results">
                 <p>Sample Results</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
