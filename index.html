@@ -16,11 +16,11 @@
     <title>Macro Calculator</title>
   </head>
   <!-- Body -->
-  <body class="text-[#343a40] dark:text-white dark:bg-slate-900">
+  <body class="text-[#343a40] bg-slate-100 dark:text-white dark:bg-slate-900">
     <!-- Global Container -->
-    <div class="max-w-7xl my-0 mx-auto px-20">
+    <div class="max-w-7xl my-0 mx-auto px-20 bg-slate-50 dark:bg-slate-900">
       <!-- Header -->
-      <header class="mb-8 grid grid-cols-1 mt-20">
+      <header class="mb-8 grid grid-cols-1 pt-20">
         <!-- Header Text Box -->
         <div class="self-center">
           <!-- Header Title -->
@@ -169,7 +169,7 @@
       </section>
 
       <!-- Calculator Section -->
-      <section class="mb-24">
+      <section class="pb-24">
         <form id="form" class="form py-[3rem] px-0">
           <!-- Calculator Grid Container -->
           <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-32">
@@ -307,7 +307,7 @@
                 <small>Error message</small>
               </div>
 
-              <div class="instructions-prompts">
+              <div class="instructions-prompts flex justify-center">
                 <button
                   type="submit"
                   class="btn bg-color-white text-[#087f5b] border-solid border-2 border-[#343a40] rounded uppercase font-[500] inline-block text-[1.8rem] py-[.8rem] px-[1.6rem] duration-300 hover:bg-[#099268] active:bg-[#099268] hover:text-white active:text-white hover:cursor-pointer active:cursor-pointer"
@@ -341,7 +341,7 @@
 
           <!-- Goal Oriented Calories Display -->
           <div
-            class="col-span-1 md:col-start-2 mb-[1.8rem] text-[1.8rem] leading-[1.7]"
+            class="col-span-1 md:col-start-2 mb-16 text-[1.8rem] leading-[1.7]"
           >
             <h3 class="text-3xl leading-7 font-bold py-5">
               Goal Oriented Calories
@@ -353,7 +353,7 @@
 
           <!-- Macros Display -->
           <div
-            class="col-span-1 md:col-start-3 mb-[1.8rem] text-[1.8rem] leading-[1.7]"
+            class="col-span-1 md:col-start-3 mb-16 text-[1.8rem] leading-[1.7]"
           >
             <h3 class="text-3xl leading-7 font-bold py-5">Macros</h3>
             <div class="macro-results">
@@ -364,7 +364,9 @@
       </section>
 
       <footer>
-        Copyright &copy; 2023 by David Fagan.
+        <div class="flex justify-center pb-10">
+          Copyright &copy; 2023 by David Fagan.
+        </div>
         <script src="script.js"></script>
       </footer>
     </div>
