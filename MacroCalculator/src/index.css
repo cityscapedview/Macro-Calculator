@@ -1,0 +1,7 @@
+:root {
+  //optionally insert here
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
