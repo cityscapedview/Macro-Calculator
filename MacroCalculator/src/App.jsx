@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import HealthBenefits from "./components/HealthBenefits";
 import Instructions from "./components/Instructions";
 import Results from "./components/Results";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Instructions />
           <Calculator />
           <Results />
+          <Footer />
         </GlobalContainer>
       </Body>
     </div>
