@@ -5,6 +5,7 @@ import GlobalContainer from "./components/GlobalContainer";
 import Header from "./components/Header";
 import HealthBenefits from "./components/HealthBenefits";
 import Instructions from "./components/Instructions";
+import Results from "./components/Results";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <HealthBenefits />
           <Instructions />
           <Calculator />
+          <Results />
         </GlobalContainer>
       </Body>
     </div>
