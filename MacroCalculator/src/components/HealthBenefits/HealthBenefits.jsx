@@ -10,17 +10,15 @@ const HealthBenefits = (props) => {
           Benefits
         </h2>
         {/* Column Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-16">
-          <ul>
-            {props.benefits.map((benefit) => (
-              <HealthCard
-                svg={benefit.svg}
-                title={benefit.title}
-                text={benefit.text}
-              />
-            ))}
-          </ul>
-        </div>
+        <ul className="grid grid-cols-1 md:grid-cols-3 md:gap-x-16">
+          {props.benefits.map((benefit) => (
+            <HealthCard
+              svg={benefit.svg}
+              title={benefit.title}
+              text={benefit.text}
+            />
+          ))}
+        </ul>
       </section>
     </>
   );
